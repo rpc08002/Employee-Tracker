@@ -22,7 +22,7 @@ var connection = mysql.createConnection({
     database: "employees_db"
   });
 
-  figlet('FSC Employee Tracker', (err, result) => {
+  figlet('UConn Employee Tracker', (err, result) => {
     console.log(err || result);
   });
 
