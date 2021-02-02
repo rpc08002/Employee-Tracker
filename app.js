@@ -279,7 +279,7 @@ var connection = mysql.createConnection({
         viewEmployees();
       }
       else if (answer.viewChoice === "EXIT") {
-        figlet('Thanks for using FSC Employee Tracker', (err, result) => {
+        figlet('Goodbye!', (err, result) => {
           console.log(err || result);
         });
   
