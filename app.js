@@ -26,4 +26,11 @@ var connection = mysql.createConnection({
     console.log(err || result);
   });
 
-  
+  connection.connect(function(err) {
+    if (err) throw err;
+    start();
+    getDepartments();
+    getRoles();
+    getManagers();
+    getEmployees();
+  });
